@@ -1,0 +1,65 @@
+# ==============================================================================
+# .htaccess for a Next.js Static Export (out folder) on Apache Servers
+# ==============================================================================
+
+# ----------------------------------------------------------------------
+# Custom 404 Error Page
+# ----------------------------------------------------------------------
+# This directive tells the server to use your custom 404.html file
+# when a page is not found.
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # ----------------------------------------------------------------------
+  # Force HTTPS
+  # ----------------------------------------------------------------------
+  # Redirects all HTTP traffic to the secure HTTPS version of your site.
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # ----------------------------------------------------------------------
+  # Handle Client-Side Routing (Single Page App behavior)
+  # ----------------------------------------------------------------------
+  # This is the most important part for Next.js.
+  # If a requested file or directory doesn't exist on the server,
+  # AND it's not an asset in the _next folder (like images, css, js),
+  # it redirects the request to the main index.html file.
+  # This allows the Next.js router to take over and display the correct page.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !^/\_next/.*
+  RewriteRule . /index.html [L]
+
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Improve Performance with Browser Caching
+# ----------------------------------------------------------------------
+# This tells the browser to cache your static files for a long time,
+# which speeds up your site for returning visitors.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  
+  ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Enable Compression
+# ----------------------------------------------------------------------
+# Compresses your files before sending them to the browser,
+# which reduces file size and improves loading speed.
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript
+</IfModule>
