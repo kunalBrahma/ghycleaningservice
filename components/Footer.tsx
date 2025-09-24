@@ -63,7 +63,7 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
-                  <span className="text-sm text-foreground/70">Guwahati, Assam, India</span>
+                  <span className="text-sm text-foreground/70">Milijuli Path,  Satgaon, Guwahati - 781037</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Phone className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
@@ -71,7 +71,7 @@ export default function Footer() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Mail className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
-                  <a href="mailto:contact@gcs.com" className="text-sm text-foreground/70 hover:text-primary transition-colors">contact@gcs.com</a>
+                  <a href="mailto:guwahaticleaningservice@gmail.com" className="text-sm text-foreground/70 hover:text-primary transition-colors">guwahaticleaningservice@gmail.com</a>
                 </li>
               </ul>
             </div>
@@ -81,7 +81,7 @@ export default function Footer() {
               <h4 className="font-semibold text-foreground mb-4">Follow Us</h4>
               <div className="flex items-center space-x-4">
                 <a href="https://wa.me/917099075965" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors"><FaWhatsapp size={24} /></a>
-                <a href="#" className="text-foreground/70 hover:text-primary transition-colors"><Facebook className="w-5 h-5" /></a>
+                <a href="https://www.facebook.com/share/1CpnfgQ4Lb/" target='_blank' className="text-foreground/70 hover:text-primary transition-colors"><Facebook className="w-5 h-5" /></a>
                 <a href="#" className="text-foreground/70 hover:text-primary transition-colors"><Instagram className="w-5 h-5" /></a>
               </div>
             </div>

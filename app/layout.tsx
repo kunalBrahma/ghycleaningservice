@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title: "Guwahati Cleaning Service",
   description: "Professional and reliable cleaning services in Guwahati, Assam.",
   icons : {
-    icon : "/favicon.png"
+    icon : "/favicon.ico"
   }
   
 };

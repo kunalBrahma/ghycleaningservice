@@ -7,6 +7,8 @@ import FullHomeCleaningSection from '@/components/FullHomeCleaningSection';
 import CommercialCleaningSection from '@/components/CommercialCleaningSection';
 import CTASection from '@/components/CTASection';
 import KitchenCleaningSection from '@/components/KitchenCleaningSection';
+import SanitizationCleaningSection from '@/components/SanitizationCleaningSection';
+import DisinfectionCleaningSection from '@/components/DisinfectionCleaningSection';
 
 // SEO Metadata for the Services Page
 export const metadata: Metadata = {
@@ -22,6 +24,8 @@ export default function ServicesPage() {
       <SofaCleaningSection />
       <BathroomCleaningSection />
       <KitchenCleaningSection />
+      <SanitizationCleaningSection />
+      <DisinfectionCleaningSection />
       <FullHomeCleaningSection />
       <CommercialCleaningSection />
       <CTASection />
