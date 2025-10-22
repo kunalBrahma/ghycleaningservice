@@ -226,9 +226,10 @@ export default function ContactSection() {
               width="100%"
               height="100%"
               style={{ border: 0 }}
-              allowFullScreen={false}
+              allowFullScreen={true}
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="strict-origin-when-cross-origin"
+              title="Guwahati Cleaning Service Location"
             ></iframe>
           </motion.div>
         </div>

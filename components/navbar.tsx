@@ -87,7 +87,7 @@ export default function Navbar() {
               ))}
             </nav>
             <div className="hidden md:block">
-              <Link href="https://wa.me/917099075965?text=I'd%20like%20to%20get%20a%20quote%20for%20your%20cleaning%20services." target='_blank'>
+              <Link href="https://api.whatsapp.com/send?phone=917099075965&text=I'd%20like%20to%20get%20a%20quote%20for%20your%20cleaning%20services." target='_blank'>
                 <button className="bg-primary text-white text-primary-foreground font-semibold py-2.5 px-6 rounded-full hover:bg-primary/90 transition-all duration-200 text-sm shadow-sm hover:shadow-md">
                   Get Quote
                 </button>

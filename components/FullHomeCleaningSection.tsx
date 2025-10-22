@@ -128,7 +128,7 @@ export default function FullHomeCleaningSection() {
                 "group w-full mt-auto rounded-xl py-4 lg:py-6 font-medium text-base",
                 pkg.popular ? "bg-primary text-white" : "bg-transparent text-foreground hover:bg-foreground/10"
               )}>
-                <Link href={`https://wa.me/917099075965?text=I'm%20interested%20in%20the%20${pkg.bhk}%20cleaning%20package.`} target='_blank'>
+                <Link href={`https://api.whatsapp.com/send?phone=917099075965&text=I'm%20interested%20in%20the%20${pkg.bhk}%20cleaning%20package.`} target='_blank'>
                   Inquire Now
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>

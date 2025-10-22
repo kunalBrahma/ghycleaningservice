@@ -174,7 +174,7 @@ export default function HeroSection() {
             </motion.div>
             <motion.div variants={slideInRight} className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2 px-4 sm:px-0">
               <Button asChild size="lg" className="group bg-primary hover:bg-primary/90  text-primary-foreground rounded-xl px-6 py-3 sm:py-3 font-medium shadow-sm hover:shadow-md transition-all duration-300 text-sm sm:text-base">
-                <Link href="https://wa.me/917099075965?text=I'd%20like%20to%20get%20a%20quote%20for%20your%20cleaning%20services." target='_blank' className='text-white'>
+                <Link href="https://api.whatsapp.com/send?phone=917099075965&text=I'd%20like%20to%20get%20a%20quote%20for%20your%20cleaning%20services." target='_blank' className='text-white'>
                   Get Free Quote
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>

@@ -80,7 +80,7 @@ export default function Footer() {
             <div>
               <h4 className="font-semibold text-foreground mb-4">Follow Us</h4>
               <div className="flex items-center space-x-4">
-                <a href="https://wa.me/917099075965" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors"><FaWhatsapp size={24} /></a>
+                <a href="https://api.whatsapp.com/send?phone=917099075965" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors"><FaWhatsapp size={24} /></a>
                 <a href="https://www.facebook.com/share/1CpnfgQ4Lb/" target='_blank' className="text-foreground/70 hover:text-primary transition-colors"><Facebook className="w-5 h-5" /></a>
                 <a href="#" className="text-foreground/70 hover:text-primary transition-colors"><Instagram className="w-5 h-5" /></a>
               </div>
@@ -107,7 +107,7 @@ export default function Footer() {
       {/* Mobile-Only Fixed CTA Bar */}
       <div className="md:hidden fixed bottom-0 left-0 right-0  z-50">
         <div className="flex justify-around items-center">
-          <a href="https://wa.me/917099075965" target="_blank" rel="noopener noreferrer" className="flex flex-1 items-center justify-center gap-2 bg-primary text-primary-foreground font-medium py-3 text-white ">
+          <a href="https://api.whatsapp.com/send?phone=917099075965" target="_blank" rel="noopener noreferrer" className="flex flex-1 items-center justify-center gap-2 bg-primary text-primary-foreground font-medium py-3 text-white ">
             <FaWhatsapp size={24} />
             <span className="text-sm">WhatsApp</span>
           </a>

@@ -86,7 +86,7 @@ export default function CommercialCleaningSection() {
             </div>
 
             <Button asChild size="lg" className="group mt-8 rounded-xl px-8 py-4 lg:py-6 font-medium text-base bg-primary text-white w-full sm:w-auto">
-                <Link href="https://wa.me/919876543210?text=I'm%20interested%20in%20a%20quote%20for%20commercial%20cleaning.">
+                <Link href="https://api.whatsapp.com/send?phone=919876543210&text=I'm%20interested%20in%20a%20quote%20for%20commercial%20cleaning.">
                   <FaWhatsapp size={24} />
                   <span className="ml-2">Inquire on WhatsApp</span>
                 </Link>

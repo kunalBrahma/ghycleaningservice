@@ -83,7 +83,7 @@ export default function SanitizationCleaningSection() {
             </div>
 
             <Button asChild size="lg" className="group mt-8 rounded-xl px-8 py-4 lg:py-6 font-medium text-base text-white">
-                <Link href="https://wa.me/917099075965" target='_blank'>
+                <Link href="https://api.whatsapp.com/send?phone=917099075965" target='_blank'>
                   Book Sanitization Service
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>

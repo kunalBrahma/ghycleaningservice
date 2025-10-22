@@ -25,7 +25,7 @@ export default function TopBar() {
 
           {/* Right Side: Social Icons */}
           <div className="flex items-center space-x-4 text-white">
-            <a href="https://wa.me/917099075965" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" className="hover:opacity-80 transition-opacity">
+            <a href="https://api.whatsapp.com/send?phone=917099075965" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" className="hover:opacity-80 transition-opacity">
               <FaWhatsapp size={24}/>
             </a>
             <a href="https://www.facebook.com/share/1CpnfgQ4Lb/" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook" className="hover:opacity-80 transition-opacity">

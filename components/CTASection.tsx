@@ -36,7 +36,7 @@ export default function CTASection() {
               Let us handle the dirty work so you can enjoy a fresh, clean home without the hassle. Get your free, no-obligation quote today!
             </p>
             <Button asChild size="lg" className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl px-8 py-4 lg:py-6 font-medium shadow-sm hover:shadow-md transition-all duration-300 text-base">
-              <Link href="https://wa.me/917099075965?text=I'd%20like%20to%20get%20a%20quote%20for%20your%20cleaning%20services." target='_blank' className='text-white'>
+              <Link href="https://api.whatsapp.com/send?phone=917099075965&text=I'd%20like%20to%20get%20a%20quote%20for%20your%20cleaning%20services." target='_blank' className='text-white'>
                 Get My Free Quote
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
